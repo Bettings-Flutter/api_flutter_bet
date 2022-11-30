@@ -1,0 +1,16 @@
+{
+  "match": {
+    "id": 1,
+    "date": "2012-44-66",
+    "home": "Man U",
+    "away": "Newcastle",
+    "league": {
+      "id": 1,
+      "name": "Premier league",
+      "country": "England",
+      "logo": "ourgth^jz(hroipeghtpozn",
+      "season": "2020"
+    },
+    "odds": {}
+  }
+}
