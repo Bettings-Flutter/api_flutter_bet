@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { OddsModule } from './odds/odds.module';
+import { BetModule } from './bet/bet.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { OddsModule } from './odds/odds.module';
     ),
     UserModule,
     OddsModule,
+    BetModule,
   ],
   controllers: [AppController],
   providers: [AppService],

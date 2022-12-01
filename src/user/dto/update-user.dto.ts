@@ -8,6 +8,9 @@ export class CoinDto {
 
 export class UpdateUserDto {
   @IsString()
+  idfirebase: string;
+
+  @IsString()
   firstname: string;
 
   @IsString()

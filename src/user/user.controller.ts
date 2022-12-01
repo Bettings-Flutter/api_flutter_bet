@@ -1,6 +1,6 @@
 import { Controller, Post, Get, Param, Put, Body } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
-import { CoinDto, UpdateUserDto } from './dto/update-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './schema/user.schema';
 import { UserService } from './user.service';
 

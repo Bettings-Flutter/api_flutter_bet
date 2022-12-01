@@ -3,12 +3,11 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 export type UserDocument = User & Document;
 
-class Coin {
-  coin: number;
-}
-
 @Schema()
 export class User {
+  @Prop()
+  idfirebase: string;
+
   @Prop()
   firstname: string;
 

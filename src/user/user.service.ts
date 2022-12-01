@@ -11,6 +11,7 @@ export class UserService {
 
   async create(createUserDto: CreateUserDto) {
     return await new this.userModel({
+      idfirebase: createUserDto.idfirebase,
       coin: 0,
       ...createUserDto,
       createdAt: new Date(),
