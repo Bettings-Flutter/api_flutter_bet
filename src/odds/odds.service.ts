@@ -87,4 +87,7 @@ export class OddsService {
         });
     });
   }
+  async findAll() {
+    return this.oddsModel.find();
+  }
 }

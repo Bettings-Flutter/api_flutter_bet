@@ -1,5 +1,6 @@
-import { Controller, Post, Param } from '@nestjs/common';
+import { Controller, Post, Get } from '@nestjs/common';
 import { OddsService } from './odds.service';
+import { Odds } from './schema/odds.schema';
 
 @Controller('odds')
 export class OddsController {
@@ -8,5 +9,10 @@ export class OddsController {
   @Post()
   async StoreOdss() {
     return await this.oddsService.storeOdds();
+  }
+
+  @Get()
+  findAll(): Promise<Odds[]> {
+    return this.oddsService.findAll();
   }
 }

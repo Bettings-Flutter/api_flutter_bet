@@ -1,5 +1,4 @@
-import { IsString, IsInt, ValidateNested } from 'class-validator';
-import { Type } from 'class-transformer';
+import { IsString, IsInt } from 'class-validator';
 
 export class CoinDto {
   @IsInt()
